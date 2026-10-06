@@ -762,6 +762,12 @@ typedef struct {
     EFI_CREATE_EVENT_EX     CreateEventEx;
 } EFI_BOOT_SERVICES;
 
+// Contains a set of GUID/pointer pairs comprised of ConfigurationTable field in the EFI System Table
+typedef struct {
+    EFI_GUID        VendorGuid;
+    VOID            *VendorTable;
+} EFI_CONFIGURATION_TABLE;
+
 // Contains pointers to the runtime and boot services tables.
 typedef struct {
     EFI_TABLE_HEADER                    Hdr;
