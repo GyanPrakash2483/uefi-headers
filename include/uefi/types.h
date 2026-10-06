@@ -34,6 +34,10 @@ typedef struct __attribute__((aligned(8))) {
     UINT8 Data4[8];                     
 } EFI_GUID;
 
+typedef enum {
+    EFI_NATIVE_INTERFACE
+} EFI_INTERFACE_TYPE;
+
 typedef UINTN EFI_STATUS;               // Status code (Type UINTN)
 
 typedef VOID *EFI_HANDLE;               // A collection of related interfaces (Type VOID *)
