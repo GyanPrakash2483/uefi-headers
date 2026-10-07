@@ -726,7 +726,7 @@ typedef struct {
     EFI_INSTALL_CONFIGURATION_TABLE     InstallConfigurationTable;
 
     // Image Services
-    EFI_IMAGE_LOAD                    LoadImage;
+    EFI_IMAGE_LOAD                      LoadImage;
     EFI_IMAGE_START                     StartImage;
     EFI_EXIT                            Exit;
     EFI_IMAGE_UNLOAD                    UnloadImage;

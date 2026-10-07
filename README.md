@@ -25,8 +25,8 @@ EFI_STATUS EFIAPI efi_main(EFI_HANDLE image, EFI_SYSTEM_TABLE *st) {
 
 ## TODO
 
-- Implement all interfaces as per specs.
 - Split into multiple files for ease of use and simplicity.
+- Adapt for architectures other than x86_64
 
 ## License
 
