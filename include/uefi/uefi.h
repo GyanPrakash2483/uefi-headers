@@ -2,6 +2,7 @@
 
 #include "types.h"
 #include "status_codes.h"
+#include "guids.h"
 
 // Forward declarations
 
