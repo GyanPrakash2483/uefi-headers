@@ -14,7 +14,7 @@ New-Item -ItemType Directory -Force $boot | Out-Null
 Copy-Item $EfiFile (Join-Path $boot "BOOTX64.EFI") -Force
 
 qemu-system-x86_64 `
-    -machine q35 `
+    -machine pc,smbios-entry-point-type=64 `
     -m 256M `
     -drive "if=pflash,format=raw,readonly=on,file=$Ovmf" `
     -drive "format=raw,file=fat:rw:$esp" `
