@@ -21,7 +21,7 @@ build/%.efi: examples/%.c | build
 	      $(EFI_CFLAGS) $(CFLAGS) $< -o $@ $(EFI_LDFLAGS) $(LDFLAGS)
 
 build:
-	mkdir -p build
+	mkdir build
 
 clean:
 	rm -rf build
